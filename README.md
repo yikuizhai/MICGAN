@@ -1,18 +1,21 @@
 # MICGAN: Mutual Information Compensation GAN
 
-[![Paper](https://img.shields.io/badge/Paper-IEEE%20SPL%202024-blue)](#citation)
+[![Paper](https://img.shields.io/badge/Paper-IEEE%20SPL%202024-blue)](https://doi.org/10.1109/LSP.2024.3439131)
 [![Code](https://img.shields.io/badge/Code-PyTorch-orange)](#environment)
+[![DOI](https://img.shields.io/badge/DOI-10.1109%2FLSP.2024.3439131-green)](https://doi.org/10.1109/LSP.2024.3439131)
 
 Official PyTorch implementation of the paper:
 
 **Mutual Information Compensation for High-Fidelity Image Generation With Limited Data**  
-Published in **IEEE Signal Processing Letters (SPL), 2024**.
+Published in **IEEE Signal Processing Letters (SPL), 2024**, Vol. 31, pp. 2145--2149.  
+DOI: [10.1109/LSP.2024.3439131](https://doi.org/10.1109/LSP.2024.3439131)
 
 > This repository releases the official code for MICGAN. The code is simple and follows a standard GAN training/inference pipeline, so users can directly check the corresponding Python scripts for running details.
 
 ## News
 
 - **2024**: MICGAN was published in **IEEE Signal Processing Letters**, Vol. 31, pp. 2145--2149.
+- DOI: [10.1109/LSP.2024.3439131](https://doi.org/10.1109/LSP.2024.3439131)
 - Code is now publicly released for research use.
 
 ## Overview
@@ -32,6 +35,19 @@ Extensive experiments on thirteen datasets demonstrate the effectiveness of MICG
 ## Abstract
 
 Limited data availability poses a perennial challenge in the field of generative image generation. However, current up-sampling methods suffer from inherent deficiencies, resulting in generators' failure to faithfully restore images with identical resolution and distribution. This is primarily evident in the diminishing mutual information as image resolution increases. Considering the above issue, we propose MICGAN, a data-efficient Generative Adversarial Network (GAN) that compensates for mutual information in every layer output feature of the generator through dense frequency skip connections. MICGAN is grounded in information theory, offering a robust theoretical foundation for mitigating mutual information decay. Additionally, we demonstrate that the augmented mutual information primarily stems from increased high-frequency components in images. Furthermore, we introduce three sub-architectures--MICGAN-A, MICGAN-C, and MICGAN-S--each employing distinct feature fusion methods. Extensive experiments across thirteen diverse datasets validate the advancements and effectiveness of MICGAN compared to state-of-the-art methods.
+
+## Keywords
+
+- Mutual information
+- Generative adversarial networks
+- Image synthesis
+- Limited data
+- Image resolution
+- High frequency
+- Information theory
+- Wavelet transform
+- Training
+- Generators
 
 ## Method Highlights
 
@@ -66,7 +82,7 @@ Other dependencies can be installed according to the actual package requirements
 
 ## Usage
 
-Please refer to the scripts in this repository for training, testing, and inference.
+Please refer to the scripts in this repository for training and inference.
 
 The code is intentionally kept simple, and the running logic can be directly checked from the corresponding Python files.
 
@@ -76,6 +92,12 @@ Recommended GitHub repository description:
 
 ```text
 Official PyTorch implementation of MICGAN: Mutual Information Compensation for High-Fidelity Image Generation With Limited Data, IEEE Signal Processing Letters 2024.
+```
+
+Recommended GitHub website/link:
+
+```text
+https://doi.org/10.1109/LSP.2024.3439131
 ```
 
 Recommended GitHub topics:
@@ -89,6 +111,7 @@ mutual-information
 frequency-domain
 pytorch
 ieee-signal-processing-letters
+wavelet-transform
 fregan
 ```
 
@@ -114,8 +137,15 @@ If you find this work useful for your research, please consider citing our paper
   volume={31},
   pages={2145--2149},
   year={2024},
-  publisher={IEEE}
+  publisher={IEEE},
+  doi={10.1109/LSP.2024.3439131}
 }
+```
+
+IEEE citation format:
+
+```text
+Y. Zhai, Z. Long, W. Pan and C. L. P. Chen, "Mutual Information Compensation for High-Fidelity Image Generation With Limited Data," in IEEE Signal Processing Letters, vol. 31, pp. 2145-2149, 2024, doi: 10.1109/LSP.2024.3439131.
 ```
 
 Please also consider citing FreGAN:
@@ -151,6 +181,7 @@ authors:
   - family-names: "Chen"
     given-names: "C. L. Philip"
 date-released: 2024-01-01
+doi: "10.1109/LSP.2024.3439131"
 url: "https://github.com/yikuizhai/MICGAN"
 preferred-citation:
   type: article
@@ -169,9 +200,8 @@ preferred-citation:
   start: 2145
   end: 2149
   year: 2024
+  doi: "10.1109/LSP.2024.3439131"
 ```
-
-The DOI can be added after confirming the official IEEE DOI.
 
 ## License
 
